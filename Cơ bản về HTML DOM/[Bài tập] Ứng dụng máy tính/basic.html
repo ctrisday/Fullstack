@@ -8,16 +8,39 @@
 </head>
 <body>
     <script>
-        function plus(){
-            let a = document.getElementById("valueA").value;
-            let b = document.getElementById("valueB").value;
-        }
+            function cong(){
+                var a = parseInt(document.getElementById("valueA").value);
+                let b = parseInt(document.getElementById("valueB").value);
+                document.getElementById("cong").innerHTML = "Result Addition: " + (a+b);
+            }
+            function tru(){
+                let a = parseInt(document.getElementById("valueA").value);
+                let b = parseInt(document.getElementById("valueB").value);
+                document.getElementById("tru").innerHTML = "Result Addition: " + (a-b);
+            }
+            function nhan(){
+                let a = parseInt(document.getElementById("valueA").value);
+                let b = parseInt(document.getElementById("valueB").value);
+                document.getElementById("nhan").innerHTML = "Result Addition: " + (a*b);
+            }
+            function chia(){
+                let a = parseInt(document.getElementById("valueA").value);
+                let b = parseInt(document.getElementById("valueB").value);
+                document.getElementById("chia").innerHTML = "Result Addition: " + (a/b);
+            }
     </script>
     <h1>Calculator</h1>
-    <form action="plus">
-        <input type="text" id="valueA">
-        <input type="text" id="valueB"> </br></br>
-        <button type="submit" onclick="plus()">Addition(+)</button>
+    <form >
+        <input type="text" id="valueA" style="font-size: 20px" >
+        <input type="text" id="valueB" style="font-size: 20px"> </br></br>
+        <button type="button" onclick="cong()" style="font-size: 20px" >Addition(+)</button>
+        <button type="button" onclick="tru()" style="font-size: 20px" >Subtraction(-)</button>
+        <button type="button" onclick="nhan()" style="font-size: 20px" >Multiplication(X)</button>
+        <button type="button" onclick="chia()" style="font-size: 20px" >Division(/)</button>
+        <h2 id="cong"></h2>
+        <h2 id="tru"></h2>
+        <h2 id="nhan"></h2>
+        <h2 id="chia"></h2>
     </form>
 </body>
 </html>

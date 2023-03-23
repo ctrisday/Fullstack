@@ -1,8 +1,7 @@
-var BanKinh = prompt('Nhap ban kinh');
+var BanKinh = parseInt(prompt('Nhap ban kinh'));
 if (isNaN(BanKinh)) {
   alert('Ban kinh phai la mot so!');
 } else {
-  BanKinh = parseInt(BanKinh);
   var DuongKinh = BanKinh*2;
   var ChuVi = 2*Math.PI*BanKinh;
   var DienTich = Math.pow(BanKinh,2)*Math.PI;
