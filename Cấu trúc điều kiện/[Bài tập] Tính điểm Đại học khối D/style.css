@@ -1,0 +1,34 @@
+#diemToan{
+    margin-left: 10px;
+}
+#diemVan{
+    margin-left: 15px;
+}
+#diemAnh{
+    margin-left: 15px;
+}
+#options{
+    margin-left: 20px;
+}
+.font{
+    font-size: 130%;
+}
+input{
+    height: 20px;
+    width: 110px;
+    font-size: 15px;
+}
+select{
+    height: 25px;
+    width: 90px;
+}
+option{
+    font-size: 15px;
+}
+button{
+    font-size: 15px;
+}
+#ketqua{
+    font-size: 130% ;
+    color: red;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="tinhdiem.js"></script>
+    <h2>Tính điểm ĐH khối D</h2><br>
+    <form>
+        <label class="font">Môn Toán</label>
+        <input type="text" id="diemToan" placeholder="Nhập điểm Toán"><br><br>
+
+        <label class="font">Môn Văn</label>
+        <input type="text" id="diemVan" placeholder="Nhập điểm Văn"><br><br>
+
+        <label class="font">Môn Anh</label>
+        <input type="text" id="diemAnh" placeholder="Nhập điểm Anh"><br><br>
+
+        <label for="options" class="font">Khu vực</label>
+        <select id="options" name="options">
+            <option value="KV1">KV1</option>
+            <option value="KV2-NT">KV2-NT</option>
+            <option value="KV2">KV2</option>
+            <option value="KV3">KV3</option>
+        </select><br><br>
+        
+        <button type="button" onclick="tinhdiem()">Tính điểm</button><br><br>
+
+        <label id="ketqua"></label>
+    </form>
+</body>
+</html>
