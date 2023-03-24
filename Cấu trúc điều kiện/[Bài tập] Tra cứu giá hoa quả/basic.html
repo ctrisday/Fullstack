@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Gia Hoa Qua</h2>
+    <input type="text" id="xemgia" >
+    <button type="button" onclick="xemgia()" >Xem gia</button><br><br>
+    <div><h3 id="giaca"></h3></div>
+    <script>
+        function xemgia(){
+            var a = document.getElementById("xemgia").value
+            switch (a){
+                case 'Mang cut':
+                    document.getElementById('giaca').innerHTML = '150.000/kg'
+                    break
+                case 'Dua hau':
+                    document.getElementById('giaca').innerHTML = '10.000/kg'
+                    break
+                default:
+                    document.getElementById('giaca').innerHTML = 'Khong hop le !'
+            }
+        }
+    </script>
+</body>
+</html>
