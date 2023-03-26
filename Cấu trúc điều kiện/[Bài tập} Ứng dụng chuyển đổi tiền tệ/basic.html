@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <form>
+        <label id="label_1">Amount</label>
+        <label id="label_2">From Currency</label>
+        <label id="label_3">To Currency</label>
+        <br>
+        <input type="number" id="soTien">
+        <select name="turn_0" id="doitien">
+            <option value="0">VND</option>
+            <option value="1">USD</option>
+            <option value="2">NDT</option>
+        </select>
+        <select name="turn_1" id="doitien1">
+            <option value="0">VND</option>
+            <option value="1">USD</option>
+            <option value="2">NDT</option>
+        </select>
+        <button type="button" onclick="ChuyenDoiTien()">Convert</button>
+    </form>
+    <p id="resuilt"></p>
+</body>
+</html>
