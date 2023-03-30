@@ -1,0 +1,37 @@
+.khung{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
+#ketqua_Input{
+    border: 3px solid #d8d8d8 ;
+    width: 470px;
+    height: 70px;
+    font-size: 50px ;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    display: flex;
+    justify-content: right;
+    margin: auto;
+    align-items: center;
+    text-align: right;
+    margin-top: 25px;
+
+}
+button{
+    margin-left: 43px;
+    margin-top: 22px;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    background-color: white;
+    color: blue;
+    font-family:'Courier New', Courier, monospace;
+    border: 3px solid #d8d8d8 ;
+    font-weight: bold;
+}
+button:active{
+    transform: scale(0.9);
+}

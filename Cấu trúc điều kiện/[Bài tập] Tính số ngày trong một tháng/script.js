@@ -2,6 +2,7 @@ function tinhNgay(){
     var input = parseInt(document.getElementById("nhapThang").value)
     if(input > 12){
         alert("Không hợp lệ !")
+        return
     }
     else{
         switch(input){
