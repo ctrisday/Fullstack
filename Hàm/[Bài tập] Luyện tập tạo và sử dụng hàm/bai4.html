@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let radius = prompt('Enter radius:');
+        let area_calculator;
+        let perimeter_calculator;
+
+        function area(area_radius){
+            area_calculator = (Math.PI*(Math.pow(area_radius, 2))).toFixed(2);
+        }
+
+        function perimeter(perimeter_radius){
+            perimeter_calculator = (2*(Math.PI * perimeter_radius)).toFixed(2);
+        }
+
+        area(radius);
+        perimeter(radius);
+        alert(`Area is: ${area_calculator} \nPerimeter is: ${perimeter_calculator}`);
+    </script>
+</body>
+</html>

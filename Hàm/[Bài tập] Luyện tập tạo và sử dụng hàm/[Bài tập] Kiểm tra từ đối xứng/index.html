@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt('');
+        checkPalindrome(input);
+        
+        function checkPalindrome(n){
+            let split_n = input.split('');
+            let check = 0;
+            let length = split_n.length
+            for(let i = 0; i < split_n.length; i++){
+                if(split_n[i] === split_n[split_n.length - 1 - i]){
+                    check += 1;
+                }
+                else{
+                    break;
+                }
+            }
+            if(check === length){
+                alert('true');
+            }
+            else{
+                alert('false');
+            }
+        }
+    </script>
+</body>
+</html>

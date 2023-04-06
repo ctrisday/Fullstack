@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let length = prompt('Enter length array:');
+        array(length);
+        
+        function array(array_length){
+            let array_input = [];
+            let array_check;
+
+            for(let i = 0; i < array_length; i++){
+                array_input[i] = prompt(`Enter character ${i}:`);
+            }
+            
+            array_check = prompt('Enter character check:');
+            let appear_1 = 0;
+            let appear_2 = 0;
+            for(let i = 0; i < array_length; i++){
+                if(array_check === array_input[i]){
+                    appear_1 += 1;
+                }
+                else{
+                    appear_2 = -1;
+                }
+            }
+            if(appear_1 > 0){
+                alert(appear_1);
+            }
+            else{
+                alert(appear_2);
+            }
+        }
+    </script>
+</body>
+</html>

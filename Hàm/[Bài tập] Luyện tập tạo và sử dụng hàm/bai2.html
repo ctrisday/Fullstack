@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let Const = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let resuilt_array;
+
+        function input(x){
+            let input_Array = prompt('Input name star:');
+            for(let i = 0; i < x.length; i++){
+                if(input_Array.toLowerCase() === x[i].toLowerCase()){
+                    Const[i] = x[i]; 
+                    break;
+                }
+            };
+        }
+
+        input(array);
+        alert(Const);
+    </script>
+</body>
+</html>

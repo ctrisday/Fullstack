@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <div id="button">
-        <button type="button" id="playButton" onclick="buttonPlay()">Play</button>
-    </div>
+    <script>
+        let input = prompt('Enter number:');
+        squared(input);
+
+        function squared(x){
+            let input_a = Math.pow(input, 2);
+            alert(input_a);
+        }
+    </script>
 </body>
 </html>
