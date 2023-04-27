@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý nhân viên</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body class="container">
+	<h1>Quản lý nhân viên</h1>
+	<form id="form-nhanvien">
+		<label for="hoten">Họ tên:</label>
+		<input type="text" id="hoten" name="hoten"><br><br>
+		<label for="sodienthoai">Số điện thoại:</label>
+		<input type="number" id="sodienthoai" name="sodienthoai"><br><br>
+		<label for="tuoi">Tuổi:</label>
+		<input type="number" id="tuoi" name="tuoi"><br><br>
+		<input type="button" value="Thêm nhân viên" onclick="themNhanVien()">
+		<input type="button" value="Làm mới" onclick="clearForm()">
+	</form>
+	<br><br>
+	<h2>Danh sách nhân viên:</h2>
+	<ul id="danh-sach"></ul>
+</body>
+</html>

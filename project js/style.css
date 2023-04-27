@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#form-nhanvien {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#form-nhanvien input,
+#form-nhanvien label {
+    margin: 5px;
+}
+
+input[type="button"] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#danh-sach {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#danh-sach li {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
